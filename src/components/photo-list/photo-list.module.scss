@@ -1,0 +1,41 @@
+.photoList {
+	h2 {
+		margin: 0 0 15px 0;
+		font-size: 2em;
+		text-transform: capitalize;
+	}
+
+	ul {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		-ms-align-items: flex-start;
+		align-items: flex-start;
+		list-style-type: none;
+		padding-left: 0;
+
+		li {
+			width: 220px;
+			height: 165px;
+			overflow: hidden;
+			margin-bottom: 15px;
+
+			&:hover img {
+				transform: scale(1.65);
+			}
+		}
+
+		img {
+			width: 220px;
+			height: 160px;
+			transform: scale(1.25);
+			transition: transform 1.25s;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.PhotoList li {
+		margin: auto;
+	}
+}

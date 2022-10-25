@@ -1,0 +1,14 @@
+.pagination {
+	ul {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+	}
+
+    button {
+        padding: 0.3rem 0.5rem;
+        margin: 1rem;
+        background-color: #20232a;
+        color: white;
+    }
+}
